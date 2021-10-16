@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>lai~ me lai~ con</title>
+</head>
+<body>
+
+</body>
+<script>
+    let money = +prompt("Nhập vào số tiền gửi")
+    let month = +prompt("Nhập vào số tháng gửi")
+    let laisuat = +prompt("Nhập vào lãi suất")
+    let monafter = money
+    for (let i = 0; i < month; i++) {
+        let tienlai = monafter * (laisuat / 100)
+        monafter += tienlai
+    }
+    alert("Số tiền sau khi gửi là: " + monafter)
+</script>
+</html>
